@@ -5,24 +5,28 @@
             "name": "client",
             "image": "edan13l/multi-client",
             "hostname": "client",
+            "memory": 128,
             "essential": false
         },
         {
             "name": "server",
             "image": "edan13l/multi-server",
             "hostname": "api",
+            "memory": 128,
             "essential": false
         },
         {
             "name": "worker",
             "image": "edan13l/multi-worker",
             "hostname": "worker",
+            "memory": 128,
             "essential": false
         },
         {
             "name": "nginx",
             "image": "edan13l/multi-nginx",
             "hostname":"nginx",
+            "memory": 128,
             "essential": true,
             "portMappings": [
                 {
